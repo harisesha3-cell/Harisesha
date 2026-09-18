@@ -19,8 +19,8 @@ if password == CORRECT_PASSWORD:
     
     # Inputs from user
     My_heart_owner_name = st.text_input("Owner Name")
-    Missing_name = st.text_input("Missing name")
-    qty = st.number_input("Quantity", min_value=1, value=1)
+    Missing_notes = st.text_input("Missing notes")
+    Missing_qty_of_hearts = st.number_input("Heart count", min_value=1, value=1)
     
     # Backend Logic 
     if st.button("Generate Bill"):
@@ -30,8 +30,8 @@ if password == CORRECT_PASSWORD:
         st.markdown("### 🧾 Notes")
         # Inga variable name-ah correct panniruken
         st.write(f"**Owner Name:** {My_heart_owner_name}")
-        st.write(f"**Missing name:** {Missing_name}")
-        st.write(f"**Quantity:** {qty}")
+        st.write(f"**Missing notes:** {Missing_notes}")
+        st.write(f"**Heart count:** {Missing_qty_of_hearts}")
         st.markdown("---")
         st.info("I Love U!❤")
 
