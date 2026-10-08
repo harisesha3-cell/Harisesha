@@ -1,2 +1,3 @@
 streamlit
-Pandas
+pillow
+pytesseract
